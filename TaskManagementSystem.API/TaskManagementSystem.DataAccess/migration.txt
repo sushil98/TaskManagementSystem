@@ -1,0 +1,2 @@
+dotnet ef migrations add InitialCreate --project ../TaskManagementSystem.DataAccess/TaskManagementSystem.DataAccess.csproj --startup-project ./TaskManagementSystem.API.csproj
+dotnet ef database update
