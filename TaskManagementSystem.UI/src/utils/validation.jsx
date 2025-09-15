@@ -31,4 +31,5 @@ export const addTaskValidation = yup.object({
   description: yup.string().required("Description is required"),
   status: yup.string().required("Status is required"),
   assignee: yup.string().required("Assignee is required"),
+  priority: yup.string().required("Priority is required"),
 });

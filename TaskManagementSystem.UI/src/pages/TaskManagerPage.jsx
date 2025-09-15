@@ -34,8 +34,6 @@ import { updateTaskStatus } from "../ws/wsConfig";
 import PopoverFilter from "../common/components/PopoverFilter";
 import PageSpinner from "../common/components/PageSpinner";
 
-////css
-
 const TaskManager = () => {
   const navigate = useNavigate();
   const { users } = useUsers();
@@ -480,7 +478,7 @@ const TaskManager = () => {
                       fullWidth={false}
                       className={styles.deleteButton}
                     >
-                      <img src="remove.svg"></img>
+                      <img width="15px" src="remove.svg"></img>
                     </CustomButton>
                   </Box>
                 </Paper>

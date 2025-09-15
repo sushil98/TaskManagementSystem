@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useState } from "react";
 import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import {
@@ -14,13 +14,17 @@ import CustomButton from "./CustomButton";
 import { addTaskValidation } from "../../utils/validation";
 import { useUsers } from "../../hooks/useUsers";
 import { priorities, statuses } from "../../utils/variablesConfig";
+import ConfirmDialog from "./ConfirmationPopUp";
 
 const TaskForm = ({ open, onClose, onSubmit }) => {
+  const [confirmOpen, setConfirmOpen] = useState(false);
+
   const { users } = useUsers();
 
   const {
     handleSubmit,
     control,
+    reset,
     formState: { isDirty, isValid },
   } = useForm({
     resolver: yupResolver(addTaskValidation),
@@ -48,6 +52,16 @@ const TaskForm = ({ open, onClose, onSubmit }) => {
       assigneeID: selectedUser?.id || "",
       email: selectedUser?.email || "",
     });
+     reset();
+  };
+
+  const handleCancelClick = () => {
+    if (isDirty) {
+      setConfirmOpen(true);
+    } else {
+      reset();
+      onClose();
+    }
   };
 
   return (
@@ -128,7 +142,7 @@ const TaskForm = ({ open, onClose, onSubmit }) => {
         </DialogContent>
 
         <DialogActions>
-          <CustomButton onClick={onClose} color="secondary">
+            <CustomButton onClick={handleCancelClick} color="secondary">
             Cancel
           </CustomButton>
           <CustomButton
@@ -141,6 +155,17 @@ const TaskForm = ({ open, onClose, onSubmit }) => {
           </CustomButton>
         </DialogActions>
       </form>
+      <ConfirmDialog
+        open={confirmOpen}
+        title="Discard Changes"
+        message="You will lose your changes. Are you sure you want to continue?"
+        onCancel={() => setConfirmOpen(false)}
+        onConfirm={() => {
+          reset()
+          setConfirmOpen(false);
+          onClose();
+        }}
+      />
     </Dialog>
   );
 };
