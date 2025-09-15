@@ -1,7 +1,8 @@
 # Application Screenshots 
-![image](https://github.com/user-attachments/assets/d1c27e16-8129-4faa-ad11-2cab22b56f51)
+<img width="1902" height="890" alt="image (19)" src="https://github.com/user-attachments/assets/bd8ebe37-59d1-420c-9b7e-7768924c0db4" />
 <img width="1908" height="887" alt="image (17)" src="https://github.com/user-attachments/assets/cd16a26b-b7b4-4b00-a4cc-632e00bd2cf5" />
-![image (1)](https://github.com/user-attachments/assets/8e37e156-ab0d-482e-8d18-e4cfd1ee5db4)
+<img width="1879" height="899" alt="image (18)" src="https://github.com/user-attachments/assets/331efc8b-2021-4cc2-abd8-fab773cf46e6" />
+
 
 # Task Management System
 
