@@ -1,6 +1,6 @@
 # Application Screenshots 
 ![image](https://github.com/user-attachments/assets/d1c27e16-8129-4faa-ad11-2cab22b56f51)
-![image](https://github.com/user-attachments/assets/bb389b21-14f8-4bb3-be24-ac69fdcd8b3a)
+<img width="1908" height="887" alt="image (17)" src="https://github.com/user-attachments/assets/cd16a26b-b7b4-4b00-a4cc-632e00bd2cf5" />
 ![image (1)](https://github.com/user-attachments/assets/8e37e156-ab0d-482e-8d18-e4cfd1ee5db4)
 
 # Task Management System
