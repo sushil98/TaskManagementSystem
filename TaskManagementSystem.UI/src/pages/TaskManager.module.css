@@ -1,0 +1,154 @@
+/* TaskManager.module.css */
+.container {
+  padding: 0px 24px;
+  min-height: 98vh;
+  background-color: #ffffff;
+}
+
+.addButtonBox {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+  gap:10px
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+  background-color: #f5f5f5;
+  min-height: 70vh;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+div.taskCard {
+      padding: 20px 15px;
+    border-radius: 8px;
+    position: relative;
+    transition: all 0.3s;
+    box-shadow: none;
+    margin-bottom: 15px;
+}
+
+.taskCard:hover {
+  box-shadow: 0 3px 22px rgba(0, 0, 0, 0.05);
+    transform: translateY(-1px);
+}
+.priorityrow{
+  display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-top: 6px;
+}
+
+p.taskTitle {
+  font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+p.taskDescription {
+      margin-bottom: 8px;
+    color: #787878;
+}
+
+.taskAssignee {
+  font-size: 0.75rem;
+  color: gray;
+}
+
+.editingInput {
+  width: 100%;
+  margin-bottom: 8px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 6px 8px;
+}
+
+.typographyLabel {
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+div.maincontainer .statusbox {
+background-color: #F6F6F6;
+padding: 20px;
+width: 33%;
+}
+
+div.maincontainer {
+  background-color: #ffffff;
+  display: flex;
+  gap: 18px;
+}
+.inlineflex{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.outerflex{
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.statusicon{
+  width: 22px;
+}
+.inlineflex button{
+  margin: 0px;
+}
+
+p.assigneerow{
+border-top: 1px solid #e8e8e8;
+    margin-top: 20px;
+    padding-top: 20px;
+    display: flex;
+    gap: 12px;
+}
+p.priorityTag{
+    padding: 4px 15px 2px 15px;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #222;
+    letter-spacing: 1px;
+}
+button.addtaskButton{
+background: #405FD8 !important;
+    padding: 8px 15px 8px 15px;
+    box-shadow: none;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    display: flex
+;
+    font-weight: 600;
+}
+button.deleteButton{
+  background: transparent;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    padding: 10px 10px;
+    min-width: inherit;
+    position: absolute;
+    top: 0px;
+    right: 15px;
+}
+button.deleteButton:hover{
+  background: #f9f9f9;
+  box-shadow: none;
+  border: 1px solid #C04949;
+}
+.inlineflex button.sortButton{
+background: transparent;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    padding: 13px 15px;
+    min-width: inherit;
+}
+.statusTitle{
+
+}

@@ -116,7 +116,6 @@ app.UseWebSockets();
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllers();
-    //endpoints.MapHub<LiveTaskStatus>("/liveTaskStatus");
 });
 
 app.Run();
