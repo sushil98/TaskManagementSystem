@@ -131,6 +131,7 @@ Make sure PostgreSQL is running and the connection string in appsettings.json is
 
 Host=localhost;Port=5432;Database=TaskManagementSystem;Username=postgres;Password=yourpassword
 
+## Project Structure
 TaskManagementSystem/
 │
 ├── TaskManagementSystem.API/        # Backend (.NET Web API)
